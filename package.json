@@ -1,0 +1,46 @@
+{
+  "name": "network-calculator",
+  "version": "0.0.0",
+  "description": "Network Calculator",
+  "author": {
+    "name": "Mert Kahyaoğlu",
+    "email": "mertkahyaoglu93@gmail.com",
+    "url": "mertkahyaoglu.github.io"
+  },
+  "repository": "mertkahyaoglu/network-calculator",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "network-calculator",
+    "network",
+    "calculator",
+    "subnet",
+    "ip",
+    "cli"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "meow": "^2.0.0",
+    "repeating": "^1.1.1",
+    "validate-ip": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "network-calculator": "cli.js"
+  }
+}
