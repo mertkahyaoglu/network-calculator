@@ -45,7 +45,7 @@ network-calculator 192.168.1.4 255.255.255.128
 
 ## License
 
-MIT © [Mert Kahyaoğlu](mertkahyaoglu.github.io)
+MIT © [Mert Kahyaoğlu](http://mertkahyaoglu.github.io/)
 
 
 [npm-url]: https://npmjs.org/package/network-calculator
