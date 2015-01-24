@@ -56,9 +56,9 @@ var nc = module.exports = function (ip, netmask) {
 
   var res = {};
 
-  res.bitmask = bitmask;
-  res.totalhost = totalhost;
   res.network = and_octets.join('.');
+  
+  res.bitmask = bitmask;
 
   and_octets[and_octets.length - 1] += 1;
   res.firsthost = and_octets.join('.');
@@ -68,6 +68,8 @@ var nc = module.exports = function (ip, netmask) {
 
   and_octets[and_octets.length - 1] -= 1;
   res.lasthost = and_octets.join('.');
+
+  res.totalhost = totalhost;
 
   return res;
 };

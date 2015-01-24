@@ -1,6 +1,8 @@
 #  Network Calculator
 
-> Network Calculator
+> Network Calculator helps you get information about an IP address
+
+![](screenshot.png)
 
 ## Install
 
@@ -12,8 +14,16 @@ $ npm install --save network-calculator
 
 ```js
 var nc = require('network-calculator');
-console.log(nc('192.168.1.4', '255.255.255.0'));
+console.log(nc('192.168.1.4', '255.255.255.128'));
 // >
+// {
+//   network: '192.168.1.0',
+//   bitmask: 25,
+//   firsthost: '192.168.1.1',
+//   broadcast: '192.168.1.127',
+//   lasthost: '192.168.1.126',
+//   totalhost: 126
+// }
 
 ```
 
