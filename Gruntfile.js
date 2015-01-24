@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         tasks: ['jshint:gruntfile']
       },
       js: {
-        files: '<%= jshint.js.src %>',
+        files: ['./lib/**/*.js', '*.js'],
         tasks: ['jshint:js', 'mochacli']
       },
       test: {
