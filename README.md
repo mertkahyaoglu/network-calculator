@@ -6,7 +6,7 @@
 
 ## Install
 
-[NPM][npm-url]
+> [NPM][npm-url]
 
 ```sh
 $ npm install --save network-calculator
