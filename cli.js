@@ -6,10 +6,10 @@ var nc = require('./');
 var cli = meow({
   help: [
     'Usage',
-    '  network-calculator <input> <input>',
+    '  nc <input> <input>',
     '',
     'Example',
-    '  network-calculator 192.168.1.14 255.255.255.0'
+    '  nc 192.168.1.14 255.255.255.0'
   ].join('\n')
 });
 

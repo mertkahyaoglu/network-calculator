@@ -1,10 +1,12 @@
-#  Network Calculator
+#  Network Calculator [![Build Status][travis-image]][travis-url]
 
 > Network Calculator helps you get information about an IP address
 
 ![](screenshot.png)
 
 ## Install
+
+[NPM][npm-url]
 
 ```sh
 $ npm install --save network-calculator
@@ -34,13 +36,13 @@ $ npm install -g network-calculator
 ```
 
 ```
-$ network-calculator --help
+$ nc --help
 
 Usage
-network-calculator <ip> <netmask>
+nc <ip> <netmask>
 
 Example
-network-calculator 192.168.1.4 255.255.255.128
+nc 192.168.1.4 255.255.255.128
 ```
 
 ## License
@@ -49,3 +51,5 @@ MIT © [Mert Kahyaoğlu](http://mertkahyaoglu.github.io/)
 
 
 [npm-url]: https://npmjs.org/package/network-calculator
+[travis-url]: https://travis-ci.org/mertkahyaoglu/network-calculator
+[travis-image]: https://travis-ci.org/mertkahyaoglu/network-calculator.svg?branch=master

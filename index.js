@@ -66,6 +66,5 @@ var nc = module.exports = function (ip, netmask) {
 };
 
 module.exports.output = function (ip, netmask) {
-  var res = nc(ip, netmask);
-  console.log(renderer(ip, netmask, res));
+  console.log(renderer(ip, netmask, nc(ip, netmask)));
 };

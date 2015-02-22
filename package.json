@@ -42,6 +42,6 @@
     "test": "grunt"
   },
   "bin": {
-    "network-calculator": "cli.js"
+    "nc": "cli.js"
   }
 }
