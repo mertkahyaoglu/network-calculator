@@ -1,4 +1,4 @@
-#  Network Calculator [![Build Status][travis-image]][travis-url]
+#  Network Calculator [![Build Status][travis-image]][travis-url] ![Downloads][npm-download]
 
 > Network Calculator helps you get information about an IP address
 
@@ -51,5 +51,6 @@ MIT © [Mert Kahyaoğlu](http://mertkahyaoglu.github.io/)
 
 
 [npm-url]: https://npmjs.org/package/network-calculator
+[npm-download]: https://img.shields.io/npm/dt/network-calculator.svg
 [travis-url]: https://travis-ci.org/mertkahyaoglu/network-calculator
 [travis-image]: https://travis-ci.org/mertkahyaoglu/network-calculator.svg?branch=master
