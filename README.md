@@ -1,4 +1,6 @@
-#  Network Calculator [![Build Status][travis-image]][travis-url] ![Downloads][npm-download]
+#  Network Calculator [![Build Status][travis-image]][travis-url]
+
+[![NPM](https://nodei.co/npm/network-calculator.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/network-calculator/)
 
 > Network Calculator helps you get information about an IP address
 
