@@ -5,7 +5,7 @@ var nc = require('./');
 
 var cli = meow({
   help: [
-    'Usage',
+    'Usage:',
     '  nc <input> <input>',
     '',
     'Example',
@@ -19,7 +19,7 @@ if (!cli.input[0]) {
 }
 
 if (!cli.input[1]) {
-  console.error('Please supply an Netmask address');
+  console.error('Please supply a Netmask address');
   process.exit(1);
 }
 
