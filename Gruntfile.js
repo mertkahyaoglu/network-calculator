@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function (grunt) {
   // Show elapsed time at the end
   require('time-grunt')(grunt);
@@ -9,7 +10,8 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
+        reporterOutput: ""
       },
       gruntfile: {
         src: ['Gruntfile.js']
@@ -21,12 +23,8 @@ module.exports = function (grunt) {
         src: ['test/**/*.js']
       }
     },
-    mochacli: {
-      options: {
-        reporter: 'nyan',
-        bail: true
-      },
-      all: ['test/*.js']
+    ava: {
+      test: ['./test/*.js'],
     },
     watch: {
       gruntfile: {
@@ -35,14 +33,14 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['./lib/**/*.js', '*.js'],
-        tasks: ['jshint:js', 'mochacli']
+        tasks: ['jshint:js', 'ava']
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'mochacli']
+        tasks: ['jshint:test', 'ava']
       }
     }
   });
 
-  grunt.registerTask('default', ['jshint', 'mochacli']);
+  grunt.registerTask('default', ['jshint', 'ava']);
 };
