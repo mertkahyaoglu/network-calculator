@@ -5,3 +5,5 @@ node_js:
   - '5'
   - '4'
 cache: yarn
+before_script:
+  - npm install grunt-cli -g
